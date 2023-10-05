@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Dev Guide</h1>
+        <input type="text" id="input-el">
+        
+
+
+        <button id="input-btn" >Save button</button>
+        <button id="save-btn">Save any Tab</button>
+        
+
+
+        <button id="delete-btn">DELETE ALL</button>
+        <br><br>
+        
+        <button class="btn" id="btn1" onclick="hide()">Create New Directory</button>
+        <div id="new">
+            <!-- <a href=""><h3>Create New Directory</h3></a> -->
+            <br>
+            <br>
+            
+            <input type="text" id="input-l" placeholder="Name Your Directory">
+            <!-- <input type="" id="input-el" placeholder="Choose Your Category"> -->
+            <div class="option">
+            <h3>Select Category</h3>
+            <select name="Category" class="DOM">
+                <option value="web development">Web Development</option>
+                <option value="app development">App Development</option>
+                <option value="competative programming">Compitetive Programming</option>
+                <div id="tab"></div>
+            </select>
+            <button id="input-btn2">Submit</button>
+            </div>
+            </div>
+        <script>
+            function hide()
+            {
+                let para = document.getElementById('new');
+                let btna = document.getElementById('btn1');
+                let btnb = document.getElementById('btn2');
+                if(para.style.display != 'none')
+                {
+                    para.style.display = 'none';
+                    // btnb.style.display = 'none';
+                    btna.style.display = 'block';
+                }
+                else
+                {
+                    para.style.display = 'block';
+                    btna.style.display = 'none';
+                    // btnb.style.display = 'block';
+                }
+            }
+        </script>
+            <div id="topic"></div>
+            <ul id="ul-el"></ul>
+            
+            <script src="index.js"></script>
+
+
+        
+    </body>
+</html>
